@@ -1,0 +1,24 @@
+﻿<UserControl x:Name="win" x:Class="project.window_welcome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/1646874014_10-idei-club-p-dom-bilbo-begginsa-interer-interer-krasivo-15.png"/>
+    </UserControl.Background>
+    <Grid Visibility="Visible">
+
+        <Ellipse x:Name="clock" HorizontalAlignment="Left" Height="119" Margin="230,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="122" Fill="#FFFFFDFD" StrokeThickness="5" Visibility="Visible"/>
+        <Label x:Name="time" Content="" HorizontalAlignment="Left" Margin="270,310,0,32" Width="70" Visibility="Visible" FontSize="36"/>
+        <TextBox x:Name="startin" HorizontalAlignment="Left" Margin="232,217,0,151" TextWrapping="Wrap" Text="    Start in" Width="120" Background="#FF2E5B28" FontSize="24" FontFamily="Bernard MT Condensed" FontWeight="Bold" Foreground="#FFEAED12" Visibility="Visible"/>
+        <TextBox x:Name="welcome_text" HorizontalAlignment="Left" Margin="449,143,0,151" TextWrapping="Wrap" Text="Welcome, brave hobbit! Complete this quest to destroy the Ring of Power and save Middle-earth!" Width="341" FontWeight="Bold" FontFamily="Blackadder ITC" FontSize="24" Visibility="Visible">
+            <TextBox.Background>
+                <ImageBrush ImageSource="/108782-pergament-drevesina-svitok-korichnevyj_cvet-uzor-1920x1080.jpg"/>
+            </TextBox.Background>
+        </TextBox>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,53 @@
+﻿<Window x:Name="xp_win" x:Class="project.xp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project"
+        mc:Ignorable="d"
+        Title="xp" Height="450" Width="800" KeyDown="xp_win_KeyDown">
+    <Window.Background>
+        <ImageBrush ImageSource="/clock-background-176847.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="time_str" Content="30" HorizontalAlignment="Left" Margin="77,0,0,0" VerticalAlignment="Center" Height="148" Width="184" Background="{x:Null}" FontSize="100" FontFamily="Snap ITC" FontWeight="Bold"/>
+        <TextBox x:Name="kamni_q1" HorizontalAlignment="Left" Margin="351,143,0,0" TextWrapping="Wrap" Text="   Каких камней в море нет?" VerticalAlignment="Top" Width="317" Height="41" BorderBrush="#FF6362E9" Foreground="White" FontSize="22" Visibility="Visible">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF371CC9" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="        Speed Quiz" HorizontalAlignment="Left" Margin="94,10,0,0" VerticalAlignment="Top" Width="574" Height="83" FontSize="48" FontWeight="Bold" FontFamily="Gill Sans Ultra Bold" BorderBrush="#FF04095E" BorderThickness="10,3,10,3" SnapsToDevicePixels="True" Background="#FF8AA8E0"/>
+        <TextBox x:Name="kamni_ans1" HorizontalAlignment="Left" Margin="351,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="317" Height="34" Visibility="Visible"/>
+        <TextBox x:Name="people" HorizontalAlignment="Left" Margin="351,142,0,0" TextWrapping="Wrap" Text="Шли муж с женой, брат с сестрой да муж с шурином. Сколько всего людей?" VerticalAlignment="Top" Width="317" Height="99" BorderBrush="#FF6362E9" Foreground="White" FontSize="22" Visibility="Hidden">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF371CC9" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <RadioButton x:Name="three1" Content="3" HorizontalAlignment="Left" Margin="356,258,0,0" VerticalAlignment="Top" Height="33" Width="50" FontSize="22" FontWeight="Bold" FontFamily="Snap ITC" Background="Snow" Visibility="Hidden"/>
+        <RadioButton x:Name="six1" Content="6" HorizontalAlignment="Left" Margin="484,258,0,0" VerticalAlignment="Top" Height="33" Width="50" FontSize="22" FontWeight="Bold" FontFamily="Snap ITC" Background="Snow" Visibility="Hidden"/>
+        <RadioButton x:Name="four1" Content="4" HorizontalAlignment="Left" Margin="618,258,0,0" VerticalAlignment="Top" Height="33" Width="50" FontSize="22" FontWeight="Bold" FontFamily="Snap ITC" Background="Snow" Visibility="Hidden"/>
+        <TextBox x:Name="houses" HorizontalAlignment="Left" Margin="291,135,0,0" TextWrapping="Wrap" Text="Горят богатый дом и бедный. Какой будет тушить полиция?" VerticalAlignment="Top" Width="377" Height="77" BorderBrush="#FF6362E9" Foreground="White" FontSize="22" Visibility="Hidden">
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF371CC9" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <RadioButton x:Name="rich" Content="Богатый" HorizontalAlignment="Left" Margin="292,224,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" FontWeight="Bold" Visibility="Hidden"/>
+        <RadioButton x:Name="poor" Content="Бедный" HorizontalAlignment="Left" Margin="426,224,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" FontWeight="Bold" Visibility="Hidden"/>
+        <RadioButton x:Name="none" Content="Никакой" HorizontalAlignment="Left" Margin="552,224,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" FontWeight="Bold" Visibility="Hidden"/>
+        <Button x:Name="answer" Content="Answer" HorizontalAlignment="Left" Margin="406,335,0,0" VerticalAlignment="Top" Height="72" Width="204" FontFamily="Snap ITC" FontSize="24" Background="#FF05024A" Foreground="#FF17D4FD" Click="answer_Click"/>
+        <Image x:Name="right" HorizontalAlignment="Center" Height="433" VerticalAlignment="Center" Width="800" Source="/Безымянный.png" Stretch="Fill" Opacity="0.7" Visibility="Hidden"/>
+        <Image x:Name="bad" HorizontalAlignment="Center" Height="433" VerticalAlignment="Center" Width="800" Source="/wrong.png" Stretch="Fill" Opacity="0.7" Visibility="Hidden"/>
+        <Label x:Name="scores" Content="   +30 xp" HorizontalAlignment="Left" Margin="94,121,0,0" VerticalAlignment="Top" Height="286" Width="574" Background="#FF0A007C" FontSize="110" Foreground="#FF00F6FF" FontWeight="Bold" Visibility="Hidden"/>
+        <Button x:Name="close" Content="Close" HorizontalAlignment="Left" Margin="229,311,0,0" VerticalAlignment="Top" Height="81" Width="305" Background="#FF61A1F9" FontFamily="Snap ITC" FontSize="48" BorderThickness="3,3,3,3" BorderBrush="#FF414078" Visibility="Hidden" Click="close_Click"/>
+
+    </Grid>
+</Window>

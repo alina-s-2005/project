@@ -1,0 +1,42 @@
+﻿<Window x:Class="project.LotteryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project"
+        mc:Ignorable="d"
+        Title="LotteryWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="108*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="126*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="154*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/tibel.jpg" Stretch="UniformToFill" TileMode="None" Opacity="0.95"/>
+        </Grid.Background>
+        <TextBlock x:Name="P30" Margin="31,22,15,22" TextWrapping="Wrap" Text="+30 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Row="1"/>
+        <TextBlock x:Name="P25" TextWrapping="Wrap" Text="+25 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="1" Grid.Row="1" Margin="21,22,21,22"/>
+        <TextBlock x:Name="P20" Margin="18,22,29,22" TextWrapping="Wrap" Text="+20 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="2" Grid.Row="1"/>
+        <TextBlock x:Name="P15" Margin="15,22,29,22" TextWrapping="Wrap" Text="+15 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="3" Grid.Row="1"/>
+        <TextBlock x:Name="P10" Margin="17,22,34,22" TextWrapping="Wrap" Text="+10 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="4" Grid.Row="1"/>
+        <TextBlock x:Name="P5" Margin="17,22,54,22" TextWrapping="Wrap" Text="+5 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="5" Grid.Row="1"/>
+        <TextBlock x:Name="M30" Margin="31,17,15,25" TextWrapping="Wrap" Text="-30 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Row="2"/>
+        <TextBlock x:Name="M25" Margin="21,17,21,25" TextWrapping="Wrap" Text="-25xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="1" Grid.Row="2"/>
+        <TextBlock x:Name="M20" Margin="18,17,29,25" TextWrapping="Wrap" Text="-20 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="2" Grid.Row="2"/>
+        <TextBlock x:Name="M15" Margin="15,17,29,25" TextWrapping="Wrap" Text="-15 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="3" Grid.Row="2"/>
+        <TextBlock x:Name="M10" Margin="17,17,34,25" TextWrapping="Wrap" Text="-10 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="4" Grid.Row="2"/>
+        <TextBlock x:Name="M5" Margin="17,17,54,25" TextWrapping="Wrap" Text="-5 xp" Background="#FFD8A571" TextTrimming="None" TextAlignment="Center" FontFamily="Imprint MT Shadow" FontSize="18" Padding="0,10,0,0" Grid.Column="5" Grid.Row="2"/>
+        <Button x:Name="Button" Content="Run a gamble" Margin="41,52,8,0" VerticalAlignment="Top" Height="57" Background="#FFF9D179" FontFamily="Imprint MT Shadow" FontSize="22" Grid.Column="2" Grid.ColumnSpan="2" Click="Button_Click"/>
+
+    </Grid>
+</Window>

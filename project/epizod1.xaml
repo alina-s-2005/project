@@ -1,0 +1,40 @@
+﻿<UserControl x:Name="ep1_win" x:Class="project.epizod1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" RenderTransformOrigin="0.5,0.5">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="274"/>
+            <ColumnDefinition Width="281"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="244*"/>
+            <RowDefinition Height="183*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="sam2.jpg"/>
+        </Grid.Background>
+        <Label Content="Will you take Sam with you?" Margin="112,0,10,3" VerticalAlignment="Bottom" Height="132" FontSize="36" FontFamily="Century Gothic" BorderBrush="Black" BorderThickness="2,2,2,2" Grid.Row="1" Grid.ColumnSpan="4">
+            <Label.Background>
+                <ImageBrush ImageSource="108782-pergament-drevesina-svitok-korichnevyj_cvet-uzor-1920x1080.jpg" Stretch="Fill" TileMode="None"/>
+            </Label.Background>
+        </Label>
+        <RadioButton x:Name="yes" Content="Yes" Margin="5,0,148,5" VerticalAlignment="Bottom" Height="66" Background="#FFE3E3E3" FontSize="48" FontFamily="Algerian" Checked="yes_Checked" Grid.Row="1" Grid.Column="2"/>
+        <RadioButton x:Name="no" Content="No" Margin="75,0,71,3" VerticalAlignment="Bottom" Height="68" Background="#FFE3E3E3" FontSize="48" FontFamily="Algerian" Checked="no_Checked" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="about_sam" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" Visibility="Hidden" Grid.ColumnSpan="2"/>
+        <Button x:Name="next" Content="" Margin="253,0,0,15" Foreground="Black" BorderThickness="0,0,0,0" Click="next_Click" Grid.Row="1" Grid.Column="2" Height="76" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="84" Grid.ColumnSpan="2" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="/free-png.ru-209.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</UserControl>
